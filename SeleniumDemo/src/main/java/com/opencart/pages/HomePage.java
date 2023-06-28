@@ -25,10 +25,10 @@ public class HomePage extends BaseClass{
 	
 	public void ClicksOnLogin() throws InterruptedException {
 		
-		Thread.sleep(2000);
+		CommonMethods.explictwait(myAccount);
 		myAccount.click();
 		
-		Thread.sleep(2000);
+		CommonMethods.explictwait(loginbtn);
 		
 		loginbtn.click();
 	}

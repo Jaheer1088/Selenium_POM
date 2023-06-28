@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.Duration;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -15,7 +17,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.opencart.pages.BaseClass;
 
@@ -86,6 +90,14 @@ public class CommonMethods extends BaseClass {
 	FileUtils.copyFile(src, dst);
 	
 	return absPath;
+		
+	}
+	
+	public static void explictwait(WebElement web) {
+		
+		WebDriverWait wait=new WebDriverWait(d, Duration.ofSeconds(10));
+		
+		wait.until(ExpectedConditions.elementToBeClickable(web));
 		
 	}
 
