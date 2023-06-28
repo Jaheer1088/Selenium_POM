@@ -14,8 +14,8 @@ public class HomePage extends BaseClass{
 	 WebElement myAccount;
 	
 	//@FindBy(xpath = "//ul[@class='dropdown-menu dropdown-menu-right']/li[2]/a")
-	@FindBy(xpath = "//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")
-	WebElement loginbtn;
+//	@FindBy(xpath = "//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")
+//	WebElement loginbtn;
 	
 	
 	public HomePage() {
@@ -30,7 +30,7 @@ public class HomePage extends BaseClass{
 		
 		Thread.sleep(2000);
 		
-		loginbtn.click();
+		//loginbtn.click();
 	}
 
 }
