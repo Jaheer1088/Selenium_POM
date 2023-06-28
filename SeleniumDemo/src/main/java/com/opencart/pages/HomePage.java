@@ -14,7 +14,7 @@ public class HomePage extends BaseClass{
 	 WebElement myAccount;
 	
 	//@FindBy(xpath = "//ul[@class='dropdown-menu dropdown-menu-right']/li[2]/a")
-	@FindBy(xpath = "//a[text()='Login']")
+	@FindBy(partialLinkText = "Login")
 	WebElement loginbtn;
 	
 	
