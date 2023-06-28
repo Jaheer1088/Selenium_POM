@@ -7,11 +7,11 @@ import com.opencart.pages.HomePage;
 
 public class HomePageTest extends BaseClass {
 	
-	
+	HomePage hp;
 	
 	@Test
 	public void Login() throws InterruptedException {
-		HomePage hp=new HomePage();
+		hp=new HomePage();
 		
 		hp.ClicksOnLogin();
 		
