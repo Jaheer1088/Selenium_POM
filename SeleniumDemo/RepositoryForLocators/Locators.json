@@ -1,0 +1,23 @@
+{
+ 
+      "HomePage" : {
+ 
+           "MyAccount_Btn_LinkedText"      :     "My Account",
+           "Login_Btn_LinkedText"          :     "Login"  
+ 
+ 
+              },
+        
+        "Login_Page" : {
+        
+            "Email_TextBox_id"            : "input-email",
+            "password_TextBox_id"         : "input-password",
+            "Login_xPath"                 : "//input[@class='btn btn-primary']"   
+        
+        
+        
+        }     
+
+
+
+}

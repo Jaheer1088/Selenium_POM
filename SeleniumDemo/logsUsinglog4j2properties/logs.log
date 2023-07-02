@@ -1,0 +1,5 @@
+[INFO ] 2023-07-02 17:29:28.844 [main] BaseClass - Oening website
+[INFO ] 2023-07-02 17:29:32.965 [main] BaseClass - Quitting the driver and session
+[INFO ] 2023-07-02 17:33:10.305 [main] BaseClass - Oening website
+[WARN ] 2023-07-02 17:33:10.975 [main] BaseClass - Added wait
+[INFO ] 2023-07-02 17:33:14.274 [main] BaseClass - Quitting the driver and session

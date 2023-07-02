@@ -21,6 +21,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.jayway.jsonpath.JsonPath;
 import com.opencart.pages.BaseClass;
 
 // delete the utility package and addd class under utility to pages package
@@ -99,6 +100,13 @@ public class CommonMethods extends BaseClass {
 		
 		wait.until(ExpectedConditions.elementToBeClickable(web));
 		
+	}
+	
+	public String getwebElement(String flepath,String locator) throws IOException {
+		
+		File file=new File(flepath);
+		
+		return JsonPath.read(file,"$."+ locator);
 	}
 
 }
