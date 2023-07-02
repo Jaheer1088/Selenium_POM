@@ -75,7 +75,7 @@ public class CommonMethods extends BaseClass {
 	File file=	((TakesScreenshot)d).getScreenshotAs(OutputType.FILE);
 	
 	//use user.dir ;
-	File dest=new File("D:\\java-2022-03\\eclipse\\SeleniumDemo\\Screenshots");
+	File dest=new File(System.getProperty("user.dir")+"SeleniumDemo\\Screenshots");
 	
 	FileUtils.copyDirectory(file, dest);
 	
